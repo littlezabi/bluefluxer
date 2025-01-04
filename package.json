@@ -15,9 +15,17 @@
     "@types/react-dom": "18.0.9",
     "eslint": "8.30.0",
     "eslint-config-next": "13.0.7",
+    "js-cookie": "^3.0.1",
+    "moment": "^2.29.4",
+    "mongoose": "^6.8.0",
     "next": "13.0.7",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-icons": "^4.7.1",
+    "react-intersection-observer": "^9.4.1",
     "typescript": "4.9.4"
+  },
+  "devDependencies": {
+    "sass": "^1.57.0"
   }
 }

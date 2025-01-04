@@ -1,6 +1,19 @@
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
-
-export default function App({ Component, pageProps }: AppProps) {
-  return <Component {...pageProps} />
+import "../styles/main.scss";
+import { useEffect, useCallback } from "react";
+import blueRex from "../utils/blueRex";
+import { StoreProvider } from "../context/context";
+function App({ Component, pageProps }: any) {
+  // const setVisitor = useCallback(async () => {
+  //   await blueRex.get("/api/visitors/?set=1");
+  // }, []);
+  // useEffect(() => {
+  //   setVisitor();
+  // }, [setVisitor]);
+  return (
+    <StoreProvider>
+      <Component {...pageProps} />
+    </StoreProvider>
+  );
 }
+
+export default App;

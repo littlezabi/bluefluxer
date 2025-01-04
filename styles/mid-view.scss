@@ -1,0 +1,113 @@
+.mid-view{
+    position: relative;
+    height: 80vh;
+    margin: auto;
+    & .mid-inner{
+        margin:auto;
+    }
+    & .mid-text{
+        margin: 80px 20px 20px 100px;
+        & h1{
+            letter-spacing: 2px;
+            font-size: 55px;
+            text-shadow: 2px 2px 2px #0000004a;
+        }
+        & p{
+            max-width: 400px;
+        }
+        position: absolute;
+    }
+    & .mid-icons{
+        & svg{
+            font-size: 36px;
+            margin: 100px 28px 10px 0;
+            color: $secondary-color;
+            transition: 300ms;
+            &:hover{
+             color: $primary-color;
+            }
+        }
+    }
+}
+.mid-right{
+    position: absolute;
+    right: 0;
+    top: 0;
+    & .image-a{
+        width: 401px;
+        margin-top: 135px;
+        margin-right: 81px;
+    }
+}
+.colors-bg-rain{
+    position: absolute;
+    left: 0;
+    right: 0;
+    & > div{
+        width: 217px;
+        height: 217px;
+        position: absolute;
+        border-radius: 60% 70% 60% 80%;
+        filter: blur(100px);
+        opacity: 0.7;
+        z-index: -1;
+    }
+    & div{
+        &:nth-child(1){
+            background: rgb(255, 0, 221);
+            box-shadow: 0 0 20px 20px rgb(255, 0, 221);
+            left: 726px;
+            top: 857px;
+        }
+        &:nth-child(2){
+            background: #fff700;
+            box-shadow: 0 0 20px 20px #fff700;
+            left: 220px;
+            top: 400px;
+        }
+        &:nth-child(3){
+            background: rgb(0, 255, 136);
+            box-shadow: 0 0 20px 20px rgb(0, 255, 136);
+            left: 929px;
+            top: 93px;
+        }
+        &:nth-child(4){
+            background: #ff00e0;
+            box-shadow: 0 0 20px 20px rgb(255, 0, 0);
+            left: 10px;
+            top: 78px;
+        }
+    }
+    & .colors-bg-layer{
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        background: #ffffff70;
+    }
+}
+
+.search-secition{
+    position: absolute;
+    left: 0;right:0;
+    top: 70%;
+    & .search-view{
+        background: #ffffff61;
+        width: 548px;
+        margin: auto;
+        height: 47px;
+        border: 1px solid #0000002e;
+        border-radius: 31px;
+        & input{
+            width: 90%;
+            height: 100%;
+            border:none;
+            background: none;
+            padding: 0 25px;
+        }
+        & svg{
+            width: 10%;
+            font-size: 22px;
+            color: $secondary-color;
+        }
+    }
+}

@@ -1,0 +1,27 @@
+header{
+    & nav{
+        padding: 36px 75px 0px 75px;
+        z-index: 1;
+    }
+    & .header-link{
+        & li{
+            margin: 0 10px;
+            text-align: center;
+            padding: 3px;
+            border-radius: 19px;
+            transition: 300ms;
+            &:hover{
+            color: $secondary-color;
+            }
+        }
+        & a{
+            font-size: 14px;
+            font-weight: bold;
+        }
+        & .active{
+            background-color: $secondary-color;
+            color: $secondary-color-ref;
+            width: 63px;
+        }
+    }
+}

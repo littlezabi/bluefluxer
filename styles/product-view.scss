@@ -1,0 +1,29 @@
+.product-categories{
+    width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    flex-wrap: wrap;
+    & section {
+        opacity: 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        height: 273px;
+        background: white;
+        padding: 27px 34px;
+        border-radius: 16px;
+        margin: 7px 12px;
+        box-shadow: 0 0 10px 0px #00000024;
+        & img{
+            width: 216px;
+            object-fit: cover;
+        }
+    }
+}
+.supera-title{
+    & h2{
+        margin: 20px 35px;
+    }
+}

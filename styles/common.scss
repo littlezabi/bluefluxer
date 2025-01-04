@@ -1,0 +1,45 @@
+body{
+  font-family: $p-fonts;
+  padding: 0;
+  margin: 0;
+  color: $primary-color;
+  background-color: $bg-color;
+}
+* {
+  font-family: inherit;
+  color: inherit;
+  scroll-behavior: smooth;
+  -webkit-font-smoothing: antialiased;
+  outline: none;
+}
+.App {
+    display: grid;
+    grid-template-areas: "header" "middle" "main" "footer";
+    grid-template-rows: auto auto 1fr auto;
+    height: 100vh;
+}
+header {
+  grid-area: header;
+}
+.middle {
+  grid-area: middle;
+}
+footer {
+  grid-area: footer;
+}
+ul{
+  padding: 0;
+  margin: 0;
+}
+li{
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+a{
+  text-decoration: none;
+}
+h1,h2,h3,h4,h5{
+  padding: 0;
+  margin: 0;
+}
